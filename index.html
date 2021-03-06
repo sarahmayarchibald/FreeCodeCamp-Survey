@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>Survey | Freecodecamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="form-box">
+                <div class="survey-header">
+                    <h1 id="title">Share your thoughts</h1>
+                    <p id="description">Tell us about your experience at the Spa by completing this survey.</p>
+                </div>
+                <div class="survey-body">
+                    <form action="" id="survey-form">
+                        <label for="name" id="name-label" class="title-label">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+    
+                        <label for="email" id="email-label" class="title-label">Email:</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+    
+                        <label for="number" id="number-label" class="title-label">Age:</label>
+                        <input type="number" id="number" placeholder="Your age" min="1" max="110" required>
+                        
+                        <p class="title-label">What massage treatment did you have?</p>
+                        <select name="dropdown" id="dropdown">
+                            <option selected disabled>Select massage</option>
+                            <option value="swedish">Swedish</option>
+                            <option value="aromatherapy">Aromatherapy</option>
+                            <option value="deepTissue">Deep Tissue</option>
+                            <option value="sport">Sport</option>
+                            <option value="thai">Thai</option>
+                            <option value="shiatsu">Shiatsu</option>
+                            <option value="couple">Couple</option>
+                            <option value="preNatal">Prenatal</option>
+                        </select>
+                        
+                        <p class="title-label">When did you have your treatment?</p>
+                        <input id="morning" type="radio" name="time" value="morning">
+                        <label for="morning">Morning</label>
+                        <input id="afternoon" type="radio" name="time" value="afternoon">
+                        <label for="afternoon">Afternoon</label>
+                        <input id="evening" type="radio" name="time" value="evening">
+                        <label for="evening">Evening</label>
+                        
+                        <p class="title-label">Select any additional services you used:</p>
+                        <input id="sauna" type="checkbox" name="service" value="sauna">
+                        <label for="sauna">Sauna</label>
+                        <input id="hammam" type="checkbox" name="service" value="hammam">
+                        <label for="hammam">Hammam</label>
+                        <input id="pool" type="checkbox" name="service" value="pool">
+                        <label for="pool">Pool</label>
+                        <input id="facial" type="checkbox" name="service" value="facial">
+                        <label for="facial">Facial</label>
+                                                
+                        <p class="title-label">Additional comments:</p>
+                        <textarea class="textarea" name="comment" id="comment" cols="30" rows="5" placeholder="Your suggestions"></textarea>
+    
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+</html>

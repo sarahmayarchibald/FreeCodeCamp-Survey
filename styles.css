@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #302406;
+}
+
+/* Utility */
+.container {
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+label,
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.title-label {
+    font-weight: bold;
+}
+
+p.title-label {
+    margin: 1rem 0 0.5rem;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top left, rgba(169, 143, 79, 0.4), rgba(80, 61, 8, 0.8)) ,url('https://images.pexels.com/photos/3188/love-romantic-bath-candlelight.jpg?cs=srgb&dl=pexels-breakingpic-3188.jpg&fm=jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Form */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: #b5984f;
+    opacity: 0.8;
+    border-radius: 20px;
+    height: 100%;
+    padding: 1rem;
+}
+
+.survey-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.survey-body {
+    max-height: 80%;
+}
+
+/* Form Elements */
+input {
+    line-height: 1.8;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+select {
+    width: 60%;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline-color: #ffb200;
+}
+
+/* Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 4%;
+    margin-bottom: 1.5rem;
+    display: inline;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    padding: 0 0.2rem;
+}
+
+/* Textarea */
+.textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+/* Button */
+.submit {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background: #6A510F;
+    color: #fff;
+}
+
+.submit:hover {
+    color: #6a510f;
+    background: #FFEDBE;
+    cursor: pointer;
+}
+
+@media(max-width: 400px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    input[type="radio"]+label,
+    input[type="checkbox"]+label {
+    font-size: 0.9rem;
+}
+}
